@@ -18,17 +18,26 @@
         </form>
       </div>
       <div class="post_container">
-        <div class="post_item">
-          <div class="post_username">
-            <p><b>siruzmammadli</b></p>
+        
+        <% for(photo of photos) { %>
+
+          <div class="post_item">
+            <div class="post_username">
+              <p><b>siruzmammadli</b></p>
+            </div>
+            <div class="post_image">
+              <img
+                src="https://blog.hubspot.com/hubfs/post-instagram-1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="post_description">
+              <p><%= photo.description %></p>
+            </div>
           </div>
-          <div class="post_image">
-            <img
-              src="https://blog.hubspot.com/hubfs/post-instagram-1.jpg"
-              alt=""
-            />
-          </div>
-        </div>
+
+        <% } %>
+
       </div>
     </div>
   </body>
